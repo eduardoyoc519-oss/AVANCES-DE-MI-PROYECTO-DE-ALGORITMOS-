@@ -1,0 +1,44 @@
+INICIO
+  DEFINIR opcion COMO ENTERO
+
+  MIENTRAS opcion != 5 HACER
+
+    IMPRIMIR "====== GESTOR DE NOTAS ACADÉMICAS ======"
+    IMPRIMIR "1. Registrar un nuevo curso y nota"
+    IMPRIMIR "2. Mostrar todas las notas registradas"
+    IMPRIMIR "3. Calcular el promedio general"
+    IMPRIMIR "4. Eliminar un curso"
+    IMPRIMIR "5. Salir"
+    IMPRIMIR "Seleccione una opcion:"
+    
+    LEER opcion
+
+    SI opcion == 1 ENTONCES
+      IMPRIMIR "registrar curso y nota"
+      <registrar_curso_nota>
+    SINO
+      SI opcion == 2 ENTONCES
+        IMPRIMIR "mostrar todas las notas"
+        <mostrar_notas>
+      SINO
+        SI opcion == 3 ENTONCES
+          IMPRIMIR "calcular promedio general"
+          <calcular_promedio>
+        SINO
+          SI opcion == 4 ENTONCES
+            IMPRIMIR "eliminar un curso"
+            <eliminar_curso>
+          SINO
+            SI opcion == 5 ENTONCES
+              IMPRIMIR "saliendo del sistema..."
+            SINO
+              IMPRIMIR "Opcion no valida, intente de nuevo."
+            FIN_SI
+          FIN_SI
+        FIN_SI
+      FIN_SI
+    FIN_SI
+    
+  FIN_MIENTRAS
+
+FIN
