@@ -1,0 +1,35 @@
+#Este programa calcula el promedio de notas
+# Definimos las variables 
+suma = 0.0
+promedio = 0.0
+cantidad = 0
+continuar = "S"
+
+# Usamos un bucle 'while' que se repita
+while continuar.upper() == "S":
+    try:
+        # Solicitamos al usuario que ingrese una nota y la convertimos a un número.
+        nota = float(input("Ingrese una nota entre 0 y 100: "))
+
+        # Verificamos si la nota es la correcta
+        if 0 <= nota <= 100:
+            suma += nota
+            cantidad += 1
+        else:
+            print("Error** La nota debe ser un número entre 0 y 100")            
+    except ValueError:
+        print("Error** Por favor, ingrese un número válido")
+    # Preguntamos si el usuario desea ingresar otra nota.
+    continuar = input("Desea ingresar otra nota (S/N): ")
+
+# Despues de que el bucle ya termino  calculamos el promedio.
+if cantidad > 0:
+    promedio = suma / cantidad
+    print("\n--- Resultados ---")
+    print(f"Notas registradas: {cantidad}")
+    print(f"Suma de notas: {suma}")
+    print(f"Promedio final: {promedio}")
+else:
+    print("\nNo se registraron notas válidas.")
+
+print("¡Programa finalizado!")
