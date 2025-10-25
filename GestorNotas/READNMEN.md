@@ -45,7 +45,7 @@ La utilización de la Pila y la Cola separa las funciones de registro de cambios
 Algoritmos de Ordenamiento:
 Se eligieron los algoritmos de Burbuja e Inserción por su sencillez conceptual, a pesar de que ambos tienen una complejidad de tiempo cuadrática y no son los más rápidos. Su implementación fue crucial para demostrar la lógica interna de los métodos de ordenamiento por comparación. En un entorno productivo, se usarían algoritmos más eficientes.
 
-#Reflexión Personal del Proyecto
+##Reflexión Personal del Proyecto
 ¿Qué aprendí con este proyecto?
 Este proyecto fue como ir al gimnasio con Python; me sirvió para darle un buen entrenamiento a lo que había aprendido en teoría.
 
